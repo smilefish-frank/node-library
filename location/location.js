@@ -1,0 +1,58 @@
+//location library
+
+function getLocation(locationId)
+{
+    //do actual library type work here
+    var location = new Object();
+    location.Name = "Location 1";
+    location.Address = "777 Somewhere, Corona, CA 92881"
+    var json = JSON.stringify(location);
+
+    return json;
+}
+
+function getLocationByClientId(clientId)
+{
+    var location = new Object();
+    location.Name = "Location 1";
+    location.Address = "777 Somewhere, Corona, CA 92881"
+    var json = JSON.stringify(location);
+
+    return json;
+}
+
+function getLocationsByGeoCode(lat, lng)
+{
+    var locations = new Array();
+    var location = new Object();
+    location.Name = "Location 1";
+    location.Address = "777 Somewhere, Corona, CA 92881"
+    locations.push(location);
+    
+    location = new Object();
+    location.Name = "Location 2";
+    location.Address = "888 Here, Corona, CA 92881";
+    location.push(location);
+
+    var json = JSON.stringify(location);
+
+    return json;
+}
+
+function getLocationsByAddress(address)
+{
+    var locations = new Array();
+    var location = new Object();
+    location.Name = "Location 1";
+    location.Address = "777 Somewhere, Corona, CA 92881"
+    locations.push(location);
+    
+    location = new Object();
+    location.Name = "Location 2";
+    location.Address = "888 Here, Corona, CA 92881";
+    location.push(location);
+
+    var json = JSON.stringify(location);
+    
+    return json;
+}
