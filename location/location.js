@@ -1,9 +1,11 @@
 //location library
+var config = require("./config")
 
 function getLocation(locationId)
 {
     //do actual library type work here
     var location = new Object();
+    location.Stage = config.stage;
     location.LocationId = locationId;
     location.Name = "Location 1";
     location.Address = "777 Somewhere, Corona, CA 92881 --- 1.0.2";
