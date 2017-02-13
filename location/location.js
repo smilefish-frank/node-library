@@ -6,7 +6,7 @@ function getLocation(locationId)
     var location = new Object();
     location.LocationId = locationId;
     location.Name = "Location 1";
-    location.Address = "777 Somewhere, Corona, CA 92881"
+    location.Address = "777 Somewhere, Corona, CA 92881 --- DEV VERSION";
     var json = JSON.stringify(location);
 
     return json;
