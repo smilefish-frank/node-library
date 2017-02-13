@@ -4,6 +4,7 @@ function getLocation(locationId)
 {
     //do actual library type work here
     var location = new Object();
+    location.LocationId = locationId;
     location.Name = "Location 1";
     location.Address = "777 Somewhere, Corona, CA 92881"
     var json = JSON.stringify(location);
@@ -14,6 +15,7 @@ function getLocation(locationId)
 function getLocationByClientId(clientId)
 {
     var location = new Object();
+    location.ClientId = clientId;
     location.Name = "Location 1";
     location.Address = "777 Somewhere, Corona, CA 92881"
     var json = JSON.stringify(location);
