@@ -1,7 +1,7 @@
 //location library
 var config = require("config")
 
-module.exports = function getLocation(locationId)
+exports.getLocation = function(locationId)
 {
     //do actual library type work here
     var location = new Object();
@@ -14,7 +14,7 @@ module.exports = function getLocation(locationId)
     return json;
 }
 
-function getLocationByClientId(clientId)
+exports.getLocationByClientId = function(clientId)
 {
     var location = new Object();
     location.ClientId = clientId;
@@ -25,7 +25,7 @@ function getLocationByClientId(clientId)
     return json;
 }
 
-function getLocationsByGeoCode(lat, lng)
+exports.getLocationsByGeoCode = function(lat, lng)
 {
     var locations = new Array();
     var location = new Object();
@@ -43,7 +43,7 @@ function getLocationsByGeoCode(lat, lng)
     return json;
 }
 
-function getLocationsByAddress(address)
+exports.getLocationsByAddress = function(address)
 {
     var locations = new Array();
     var location = new Object();
